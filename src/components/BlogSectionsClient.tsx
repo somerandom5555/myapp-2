@@ -31,13 +31,23 @@ type OnchainItem = {
   link?: string;
 };
 
+type CMEItem = {
+  id: string | number;
+  image?: string;
+  title: string;
+  category: string;
+  categoryColor: string;
+  timeAgo: string;
+  description: string;
+};
+
 type Props = {
   valueAreasAll: BlogPost[];
   dailyAnalysis: BlogPost[];
   whalesInstitutions: BlogPost[];
   newsThatMatters: NewsItem[];
   onchainInsights: OnchainItem[];
-  cmeUsData: any[];
+  cmeUsData: CMEItem[];
 };
 
 export default function BlogSectionsClient({
