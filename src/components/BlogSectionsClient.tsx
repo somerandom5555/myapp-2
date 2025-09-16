@@ -31,6 +31,7 @@ type OnchainItem = {
   link?: string;
 };
 
+// ---- FIX: Make description optional (description?: string) ----
 type CMEItem = {
   id: string | number;
   image?: string;
@@ -38,7 +39,7 @@ type CMEItem = {
   category: string;
   categoryColor: string;
   timeAgo: string;
-  description: string;
+  description?: string;
 };
 
 type Props = {
