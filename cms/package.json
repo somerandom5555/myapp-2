@@ -1,0 +1,28 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "Payload CMS backend for myapp-2",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node src/server.js",
+    "start": "cross-env NODE_ENV=production node src/server.js",
+    "generate:types": "payload generate:types",
+    "generate:schema": "payload generate:db-schema"
+  },
+  "keywords": [
+    "payload",
+    "cms",
+    "headless"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@payloadcms/db-mongodb": "^3.55.1",
+    "@payloadcms/richtext-lexical": "^3.55.1",
+    "cross-env": "^10.0.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "payload": "^3.55.1"
+  }
+}
